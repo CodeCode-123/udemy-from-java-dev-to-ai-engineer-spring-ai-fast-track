@@ -4,18 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="79cb3f2e-395b-4a7f-bb83-acd394708f81" name="Changes" comment="Initial commit">
-      <change afterPath="$PROJECT_DIR$/springai/src/main/java/com/eazybytes/springai/config/ChatMemoryChatClientConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springai/src/main/java/com/eazybytes/springai/controller/ChatMemoryController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springai/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/springai/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springai/src/main/java/com/eazybytes/springai/config/ChatClientConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/springai/src/main/java/com/eazybytes/springai/config/ChatClientConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springai/src/main/java/com/eazybytes/springai/controller/ChatController.java" beforeDir="false" afterPath="$PROJECT_DIR$/springai/src/main/java/com/eazybytes/springai/controller/ChatController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springai/src/main/java/com/eazybytes/springai/controller/PromptStuffingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/springai/src/main/java/com/eazybytes/springai/controller/PromptStuffingController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springai/src/main/java/com/eazybytes/springai/controller/PromptTemplateController.java" beforeDir="false" afterPath="$PROJECT_DIR$/springai/src/main/java/com/eazybytes/springai/controller/PromptTemplateController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springai/src/main/java/com/eazybytes/springai/controller/StreamController.java" beforeDir="false" afterPath="$PROJECT_DIR$/springai/src/main/java/com/eazybytes/springai/controller/StreamController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springai/src/main/java/com/eazybytes/springai/controller/StructuredOutPutController.java" beforeDir="false" afterPath="$PROJECT_DIR$/springai/src/main/java/com/eazybytes/springai/controller/StructuredOutPutController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springai/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/springai/src/main/resources/application.properties" afterDir="false" />
-    </list>
+    <list default="true" id="79cb3f2e-395b-4a7f-bb83-acd394708f81" name="Changes" comment="Added ChatMemory configurations using an H2 in-memory database and stored the messages in a file with a JDBC Chat Memory Repository, added a customized ChatMemory as a @Bean in the Configuration, and tested using Postman" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -112,12 +101,21 @@
       <option name="project" value="LOCAL" />
       <updated>1784566828024</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Added ChatMemory configurations using an H2 in-memory database and stored the messages in a file with a JDBC Chat Memory Repository, added a customized ChatMemory as a @Bean in the Configuration, and tested using Postman">
+      <option name="closed" value="true" />
+      <created>1784581693857</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1784581693857</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial commit" />
+    <MESSAGE value="Added ChatMemory configurations using an H2 in-memory database and stored the messages in a file with a JDBC Chat Memory Repository, added a customized ChatMemory as a @Bean in the Configuration, and tested using Postman" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added ChatMemory configurations using an H2 in-memory database and stored the messages in a file with a JDBC Chat Memory Repository, added a customized ChatMemory as a @Bean in the Configuration, and tested using Postman" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
