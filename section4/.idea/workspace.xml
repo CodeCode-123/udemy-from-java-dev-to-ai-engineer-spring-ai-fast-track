@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="79cb3f2e-395b-4a7f-bb83-acd394708f81" name="Changes" comment="Initial commit">
+      <change afterPath="$PROJECT_DIR$/springai/src/main/java/com/eazybytes/springai/config/ChatMemoryChatClientConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springai/src/main/java/com/eazybytes/springai/controller/ChatMemoryController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springai/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/springai/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springai/src/main/java/com/eazybytes/springai/config/ChatClientConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/springai/src/main/java/com/eazybytes/springai/config/ChatClientConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springai/src/main/java/com/eazybytes/springai/controller/ChatController.java" beforeDir="false" afterPath="$PROJECT_DIR$/springai/src/main/java/com/eazybytes/springai/controller/ChatController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springai/src/main/java/com/eazybytes/springai/controller/PromptStuffingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/springai/src/main/java/com/eazybytes/springai/controller/PromptStuffingController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springai/src/main/java/com/eazybytes/springai/controller/PromptTemplateController.java" beforeDir="false" afterPath="$PROJECT_DIR$/springai/src/main/java/com/eazybytes/springai/controller/PromptTemplateController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springai/src/main/java/com/eazybytes/springai/controller/StreamController.java" beforeDir="false" afterPath="$PROJECT_DIR$/springai/src/main/java/com/eazybytes/springai/controller/StreamController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springai/src/main/java/com/eazybytes/springai/controller/StructuredOutPutController.java" beforeDir="false" afterPath="$PROJECT_DIR$/springai/src/main/java/com/eazybytes/springai/controller/StructuredOutPutController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springai/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/springai/src/main/resources/application.properties" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHomeTypeForPersistence" value="WRAPPER" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
+  <component name="ProjectId" id="3GmAvbMzGMLVbLmJerPOmYuRX3M" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;Spring Boot.SpringAiApplication.executor&quot;: &quot;Debug&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.projectsettings.compiler.javacompiler&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.eazybytes.springai.config" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="SpringAiApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <envs>
+        <env name="OPENAI_API_KEY" value="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" />
+      </envs>
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UnknownPolicyInFreeMode" />
+      <module name="springai" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.eazybytes.springai.SpringAiApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.eazybytes.springai.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.SpringAiApplication" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-30f59d01ecdd-26cb7f24e5b0-intellij.indexing.shared.core-IU-253.29346.138" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="79cb3f2e-395b-4a7f-bb83-acd394708f81" name="Changes" comment="" />
+      <created>1784566601429</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1784566601429</updated>
+    </task>
+    <task id="LOCAL-00001" summary="Initial commit">
+      <option name="closed" value="true" />
+      <created>1784566828024</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1784566828024</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Initial commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Initial commit" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>

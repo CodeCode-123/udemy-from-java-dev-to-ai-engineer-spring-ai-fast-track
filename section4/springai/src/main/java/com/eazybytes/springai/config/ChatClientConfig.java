@@ -12,10 +12,11 @@ import java.util.List;
 @Configuration
 public class ChatClientConfig {
 
-    @Bean
+    @Bean("chatClient")
     public ChatClient chatClient(ChatClient.Builder chatClientBuilder) {
         var options = OpenAiChatOptions.builder().model("gpt-5.4-mini").temperature(0.8);
         return chatClientBuilder
+                .defaultOptions(options)
                 .defaultAdvisors(List.of(new SimpleLoggerAdvisor(),
                         new TokenUsageAuditAdvisor()))
                 .defaultSystem("""

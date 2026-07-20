@@ -3,6 +3,7 @@ package com.eazybytes.springai.controller;
 import com.openai.models.ChatModel;
 import org.springframework.ai.chat.client.ChatClient;
 import org.springframework.ai.openai.OpenAiChatOptions;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.core.io.Resource;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -15,7 +16,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class PromptStuffingController {
     private final ChatClient chatClient;
 
-    public PromptStuffingController(ChatClient chatClient) {
+    public PromptStuffingController(@Qualifier("chatClient") ChatClient chatClient) {
         this.chatClient = chatClient;
     }
 
