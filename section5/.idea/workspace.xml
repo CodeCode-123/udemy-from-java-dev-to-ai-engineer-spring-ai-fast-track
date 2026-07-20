@@ -4,8 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="79cb3f2e-395b-4a7f-bb83-acd394708f81" name="Changes" comment="Added ChatMemory configurations using an H2 in-memory database and stored the messages in a file with a JDBC Chat Memory Repository, added a customized ChatMemory as a @Bean in the Configuration, and tested using Postman">
+    <list default="true" id="79cb3f2e-395b-4a7f-bb83-acd394708f81" name="Changes" comment="Initial commit">
+      <change afterPath="$PROJECT_DIR$/springai/docker-compose.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../section4/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../section4/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springai/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/springai/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springai/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/springai/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springai/src/test/java/com/eazybytes/springai/SpringAiApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/springai/src/test/java/com/eazybytes/springai/SpringAiApplicationTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,8 +56,10 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "JUnit.SpringAiApplicationTests.executor": "Debug",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
     "Spring Boot.SpringAiApplication.executor": "Debug",
     "git-widget-placeholder": "main",
@@ -68,7 +75,26 @@
       <recent name="com.eazybytes.springai.config" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Spring Boot.SpringAiApplication">
+    <configuration name="SpringAiApplicationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="springai" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.eazybytes.springai.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.eazybytes.springai" />
+      <option name="MAIN_CLASS_NAME" value="com.eazybytes.springai.SpringAiApplicationTests" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
+      <envs>
+        <env name="OPENAI_API_KEY" value="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" />
+      </envs>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="SpringAiApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <envs>
         <env name="OPENAI_API_KEY" value="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" />
@@ -86,9 +112,14 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="JUnit.SpringAiApplicationTests" />
+      <item itemvalue="Spring Boot.SpringAiApplication" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Spring Boot.SpringAiApplication" />
+        <item itemvalue="JUnit.SpringAiApplicationTests" />
       </list>
     </recent_temporary>
   </component>
@@ -123,13 +154,21 @@
       <option name="project" value="LOCAL" />
       <updated>1784581693857</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Initial commit">
+      <option name="closed" value="true" />
+      <created>1784582373567</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1784582373567</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Initial commit" />
     <MESSAGE value="Added ChatMemory configurations using an H2 in-memory database and stored the messages in a file with a JDBC Chat Memory Repository, added a customized ChatMemory as a @Bean in the Configuration, and tested using Postman" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added ChatMemory configurations using an H2 in-memory database and stored the messages in a file with a JDBC Chat Memory Repository, added a customized ChatMemory as a @Bean in the Configuration, and tested using Postman" />
+    <MESSAGE value="Initial commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Initial commit" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
