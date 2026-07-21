@@ -64,6 +64,11 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-docker-compose</artifactId>
 		</dependency>
+		<!-- Source: https://mvnrepository.com/artifact/org.springframework.ai/spring-ai-redis-semantic-cache -->
+		<dependency>
+			<groupId>org.springframework.ai</groupId>
+			<artifactId>spring-ai-redis-semantic-cache</artifactId>
+		</dependency>
 		<!-- Source: https://mvnrepository.com/artifact/org.springframework.ai/spring-ai-rag -->
 		<dependency>
 			<groupId>org.springframework.ai</groupId>
