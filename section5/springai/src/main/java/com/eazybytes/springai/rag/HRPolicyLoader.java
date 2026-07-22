@@ -21,7 +21,7 @@ public class HRPolicyLoader {
     @Value("classpath:Eazybytes_HR_Policies.pdf")
     Resource policyFile;
 
-    public HRPolicyLoader(@Qualifier("cacheVectorStore") VectorStore vectorStore) {
+    public HRPolicyLoader(VectorStore vectorStore) {
         this.vectorStore = vectorStore;
     }
 
