@@ -17,8 +17,6 @@ public class ChatClientConfig {
         var options = OpenAiChatOptions.builder().model("gpt-5.4-mini").temperature(0.8);
         return chatClientBuilder
                 .defaultOptions(options)
-                .defaultAdvisors(List.of(new SimpleLoggerAdvisor(),
-                        new TokenUsageAuditAdvisor()))
                 .defaultSystem("""
                     You are an internal HR assistant. Your role is to help\\s
                     employees with questions related to HR policies, such as\\s
