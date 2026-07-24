@@ -4,7 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="79cb3f2e-395b-4a7f-bb83-acd394708f81" name="Changes" comment="Initial commit" />
+    <list default="true" id="79cb3f2e-395b-4a7f-bb83-acd394708f81" name="Changes" comment="Initial commit">
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcpclient/src/main/resources/mcp-servers-stdio.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcpserverstdio/src/main/java/com/eazybytes/mcpserverstdio/entity/HelpDeskTicket.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcpserverstdio/src/main/java/com/eazybytes/mcpserverstdio/model/TicketRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcpserverstdio/src/main/java/com/eazybytes/mcpserverstdio/repository/HelpDeskTicketRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcpserverstdio/src/main/java/com/eazybytes/mcpserverstdio/service/HelpDeskTicketService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcpserverstdio/src/main/java/com/eazybytes/mcpserverstdio/tool/HelpDeskTools.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mcpclient/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/mcpclient/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mcpclient/src/main/resources/mcp-servers.json" beforeDir="false" afterPath="$PROJECT_DIR$/mcpclient/src/main/resources/mcp-servers.json" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -47,28 +62,36 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;JUnit.SpringAiApplicationTests.executor&quot;: &quot;Debug&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;Spring Boot.SpringAiApplication.executor&quot;: &quot;Debug&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.17356321&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.projectsettings.compiler.javacompiler&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "JUnit.SpringAiApplicationTests.executor": "Debug",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Spring Boot.McpclientApplication.executor": "Debug",
+    "Spring Boot.McpserverRemoteApplication.executor": "Debug",
+    "Spring Boot.McpserverstdioApplication.executor": "Debug",
+    "Spring Boot.SpringAiApplication.executor": "Debug",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/ada1/Desktop/GetHireTechnologies_CognizeTech/ExtraCourses/UdemyFromJavaDevToAIEngineerSpringAIFastTrack/sections/section7/mcpclient/src/main/resources",
+    "project.structure.last.edited": "SDKs",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.17356321",
+    "settings.editor.selected.configurable": "reference.projectsettings.compiler.javacompiler"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/mcpclient/src/main/resources" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.eazybytes.springai.config" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.SpringAiApplication">
+  <component name="RunManager" selected="Spring Boot.McpclientApplication">
     <configuration name="SpringAiApplicationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="springai" />
       <extension name="coverage">
@@ -84,6 +107,51 @@
       <envs>
         <env name="OPENAI_API_KEY" value="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" />
       </envs>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="McpclientApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <envs>
+        <env name="OPENAI_API_KEY" value="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" />
+      </envs>
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UnknownPolicyInFreeMode" />
+      <module name="mcpclient" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.eazybytes.mcpclient.McpclientApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.eazybytes.mcpclient.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="McpserverRemoteApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UnknownPolicyInFreeMode" />
+      <module name="mcpserverstdio (1)" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.eazybytes.mcpserverremote.McpserverRemoteApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.eazybytes.mcpserverremote.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="McpserverstdioApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UnknownPolicyInFreeMode" />
+      <module name="mcpserverstdio" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.eazybytes.mcpserverstdio.McpserverstdioApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.eazybytes.mcpserverstdio.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -108,10 +176,16 @@
     </configuration>
     <list>
       <item itemvalue="JUnit.SpringAiApplicationTests" />
+      <item itemvalue="Spring Boot.McpserverRemoteApplication" />
+      <item itemvalue="Spring Boot.McpclientApplication" />
+      <item itemvalue="Spring Boot.McpserverstdioApplication" />
       <item itemvalue="Spring Boot.SpringAiApplication" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.McpclientApplication" />
+        <item itemvalue="Spring Boot.McpserverRemoteApplication" />
+        <item itemvalue="Spring Boot.McpserverstdioApplication" />
         <item itemvalue="Spring Boot.SpringAiApplication" />
         <item itemvalue="JUnit.SpringAiApplicationTests" />
       </list>
