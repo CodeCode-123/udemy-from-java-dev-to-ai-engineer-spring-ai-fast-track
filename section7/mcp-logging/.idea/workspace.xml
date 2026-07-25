@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6819578a-b89f-476a-9763-6907500b24ac" name="Changes" comment="Added MCP Client and MCP Server using STDIO and remote invocation to call local and third-party tools; used MCP inspector to test tools and monitor MCP servers; added McpServerToolFilter to filter tools globally at the beginning of the program, added ToolUtil to filter tools at each request, and tested using Postman">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="6819578a-b89f-476a-9763-6907500b24ac" name="Changes" comment="Added MCP Client and MCP Server using STDIO and remote invocation to call local and third-party tools; used MCP inspector to test tools and monitor MCP servers; added McpServerToolFilter to filter tools globally at the beginning of the program, added ToolUtil to filter tools at each request, and tested using Postman" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
