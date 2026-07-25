@@ -9,6 +9,8 @@ import org.springframework.ai.tool.ToolCallbackProvider;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.Map;
+import java.util.UUID;
 
 @RestController
 @RequestMapping("/api")
@@ -34,6 +36,7 @@ public class MCPClientController {
         ToolCallback[] toolCallbacks = ToolUtil.selectToolsFor(mcpClients, "helpdesk-mcp-server", null);
         return chatClient.prompt().user(message + " My username is " + username)
                 .tools((Object[]) toolCallbacks)
+                .toolContext(Map.of("progressToken", UUID.randomUUID().toString())) //used to track progress using a UUID
                 .call().content();
     }
 }

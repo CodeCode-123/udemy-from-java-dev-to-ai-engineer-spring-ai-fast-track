@@ -4,8 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6819578a-b89f-476a-9763-6907500b24ac" name="Changes" comment="Added MCP server logs using McpSyncRequestContext in the mcpserverremote, added a HelpDeskLogBridge in the MCPClient with @McpLogging annotation to get the logs from the MCP server, and tested using MCP inspector and Postman">
-      <change beforePath="$PROJECT_DIR$/../mcp-logging/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../mcp-logging/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="6819578a-b89f-476a-9763-6907500b24ac" name="Changes" comment="Initial commit">
+      <change afterPath="$PROJECT_DIR$/mcpclient/src/main/java/com/eazybytes/mcpclient/util/HelpDeskToolProgressListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mcpclient/src/main/java/com/eazybytes/mcpclient/controller/MCPClientController.java" beforeDir="false" afterPath="$PROJECT_DIR$/mcpclient/src/main/java/com/eazybytes/mcpclient/controller/MCPClientController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mcpclient/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/mcpclient/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mcpserverremote/src/main/java/com/eazybytes/mcpserverremote/tool/HelpDeskTools.java" beforeDir="false" afterPath="$PROJECT_DIR$/mcpserverremote/src/main/java/com/eazybytes/mcpserverremote/tool/HelpDeskTools.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -152,13 +156,21 @@
       <option name="project" value="LOCAL" />
       <updated>1785015169904</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Initial commit">
+      <option name="closed" value="true" />
+      <created>1785017057193</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1785017057193</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Added MCP Client and MCP Server using STDIO and remote invocation to call local and third-party tools; used MCP inspector to test tools and monitor MCP servers; added McpServerToolFilter to filter tools globally at the beginning of the program, added ToolUtil to filter tools at each request, and tested using Postman" />
-    <MESSAGE value="Initial commit" />
     <MESSAGE value="Added MCP server logs using McpSyncRequestContext in the mcpserverremote, added a HelpDeskLogBridge in the MCPClient with @McpLogging annotation to get the logs from the MCP server, and tested using MCP inspector and Postman" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added MCP server logs using McpSyncRequestContext in the mcpserverremote, added a HelpDeskLogBridge in the MCPClient with @McpLogging annotation to get the logs from the MCP server, and tested using MCP inspector and Postman" />
+    <MESSAGE value="Initial commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Initial commit" />
   </component>
 </project>
