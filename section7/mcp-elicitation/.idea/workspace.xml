@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6819578a-b89f-476a-9763-6907500b24ac" name="Changes" comment="Added MCP Sampling, created @McpTool of summarizeTickets in the MCPServerRemote to retrieve ticket data from the database, and used ctx.sampleEnable() to call the LLM model to provide a response to the client according to the retrieved data. Added a HelpDeskSamplingProvider in the MCPClient to handle the McpSchema CreateMessageRequest from the MCPServerRemote when MCP sampling was triggered. Added a controller method in MCPClient to handle the summarize-tickets request using MCP sampling, and tested using Postman">
-      <change afterPath="$PROJECT_DIR$/mcpclient/src/main/java/com/eazybytes/mcpclient/util/HelpDeskElicitationProvider.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mcpserverremote/src/main/java/com/eazybytes/mcpserverremote/model/TicketContactInfo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mcp-sampling/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../mcp-sampling/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="6819578a-b89f-476a-9763-6907500b24ac" name="Changes" comment="Added the MCP Elicitation tool in the HelpDeskTools of MCPServerRemote using ctx.elicitEnabled() to request information from the client. If elicitResult.action() is 'accept', the results will be processed. Added priority and contactPhone in the entity. Added a HelpDeskElicitationProvider in the MCPClient to handle the McpSchema.ElicitRequest from the MCPServerRemote, provided the response of priority and contactPhone, built an ElicitResult with an Action of Accept, and tested using Postman" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -187,7 +183,15 @@
       <option name="project" value="LOCAL" />
       <updated>1785096749331</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Added the MCP Elicitation tool in the HelpDeskTools of MCPServerRemote using ctx.elicitEnabled() to request information from the client. If elicitResult.action() is 'accept', the results will be processed. Added priority and contactPhone in the entity. Added a HelpDeskElicitationProvider in the MCPClient to handle the McpSchema.ElicitRequest from the MCPServerRemote, provided the response of priority and contactPhone, built an ElicitResult with an Action of Accept, and tested using Postman">
+      <option name="closed" value="true" />
+      <created>1785110871838</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1785110871838</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -196,6 +200,7 @@
     <MESSAGE value="Added a ctx.progress() method in mcpserverremote and ran a loop for 10 seconds, added .toolContext() to set the progressToken of a unique UUID to track progress, added a HelpDeskToolProgressListener to listen to the progress notification from mcpserverremote and log the information, and tested using Postman" />
     <MESSAGE value="Initial commit" />
     <MESSAGE value="Added MCP Sampling, created @McpTool of summarizeTickets in the MCPServerRemote to retrieve ticket data from the database, and used ctx.sampleEnable() to call the LLM model to provide a response to the client according to the retrieved data. Added a HelpDeskSamplingProvider in the MCPClient to handle the McpSchema CreateMessageRequest from the MCPServerRemote when MCP sampling was triggered. Added a controller method in MCPClient to handle the summarize-tickets request using MCP sampling, and tested using Postman" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added MCP Sampling, created @McpTool of summarizeTickets in the MCPServerRemote to retrieve ticket data from the database, and used ctx.sampleEnable() to call the LLM model to provide a response to the client according to the retrieved data. Added a HelpDeskSamplingProvider in the MCPClient to handle the McpSchema CreateMessageRequest from the MCPServerRemote when MCP sampling was triggered. Added a controller method in MCPClient to handle the summarize-tickets request using MCP sampling, and tested using Postman" />
+    <MESSAGE value="Added the MCP Elicitation tool in the HelpDeskTools of MCPServerRemote using ctx.elicitEnabled() to request information from the client. If elicitResult.action() is 'accept', the results will be processed. Added priority and contactPhone in the entity. Added a HelpDeskElicitationProvider in the MCPClient to handle the McpSchema.ElicitRequest from the MCPServerRemote, provided the response of priority and contactPhone, built an ElicitResult with an Action of Accept, and tested using Postman" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added the MCP Elicitation tool in the HelpDeskTools of MCPServerRemote using ctx.elicitEnabled() to request information from the client. If elicitResult.action() is 'accept', the results will be processed. Added priority and contactPhone in the entity. Added a HelpDeskElicitationProvider in the MCPClient to handle the McpSchema.ElicitRequest from the MCPServerRemote, provided the response of priority and contactPhone, built an ElicitResult with an Action of Accept, and tested using Postman" />
   </component>
 </project>
