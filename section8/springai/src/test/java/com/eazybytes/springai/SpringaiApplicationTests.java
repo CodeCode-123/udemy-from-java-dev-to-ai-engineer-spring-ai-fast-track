@@ -15,8 +15,10 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.core.io.Resource;
 import org.springframework.test.context.TestPropertySource;
 
+import org.springframework.ai.document.Document;
 import java.io.IOException;
 import java.nio.charset.Charset;
+import java.util.List;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
@@ -44,6 +46,9 @@ class SpringaiApplicationTests {
 
 	@Value("classpath:/promptTemplates/factcheck.st")
 	Resource factCheckTemplate;
+
+	@Value("classpath:/promptTemplates/hrPolicy.st")
+	Resource hrPolicyTemplate;
 
 	@BeforeEach
 	void setup() throws IOException {
@@ -114,4 +119,33 @@ class SpringaiApplicationTests {
 						.isTrue());
 	}
 
+	@Test
+	@DisplayName("Should correctly evaluate factual response based on HR policy context (RAG scenario)")
+	@Timeout(value = 30)
+	public void evaluateHrPolicyAnswerWithRagContext() throws IOException {
+		// Given
+		String question = "How many paid leaves do employees get annually?";
+
+		// When
+		String aiResponse = chatController.promptStuffing(question);
+		String retrievedContext = hrPolicyTemplate.getContentAsString(Charset.defaultCharset());
+
+		EvaluationRequest evaluationRequest = new EvaluationRequest(
+				question, List.of(new Document(retrievedContext)),
+				aiResponse);
+		EvaluationResponse response = factCheckingEvaluator.evaluate(evaluationRequest);
+
+		Assertions.assertAll(
+				() -> assertThat(aiResponse).isNotBlank(),
+				() -> assertThat(response.isPass())
+						.withFailMessage("""
+                        ========================================
+                        The response was not considered factually accurate.
+                        Question: %s
+                        Response: %s
+                        Context: %s
+                        ========================================
+                        """, question, aiResponse, retrievedContext) //context is empty, ""
+						.isTrue());
+	}
 }
