@@ -1,13 +1,117 @@
 package com.eazybytes.springai;
 
-import org.junit.jupiter.api.Test;
+import com.eazybytes.springai.controller.ChatController;
+import org.junit.jupiter.api.*;
+import org.springframework.ai.chat.client.ChatClient;
+import org.springframework.ai.chat.client.advisor.SimpleLoggerAdvisor;
+import org.springframework.ai.chat.evaluation.FactCheckingEvaluator;
+import org.springframework.ai.chat.evaluation.RelevancyEvaluator;
+import org.springframework.ai.chat.model.ChatModel;
+import org.springframework.ai.evaluation.EvaluationRequest;
+import org.springframework.ai.evaluation.EvaluationResponse;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.core.io.Resource;
+import org.springframework.test.context.TestPropertySource;
+
+import java.io.IOException;
+import java.nio.charset.Charset;
+
+import static org.assertj.core.api.Assertions.assertThat;
 
 @SpringBootTest
+@TestInstance(TestInstance.Lifecycle.PER_CLASS) //the default is per method, but this test is per class
+@TestPropertySource(properties = {
+		"spring.ai.openai.api-key=${OPENAI_API_KEY:test-key}",
+		"logging.level.org.springframework.ai=DEBUG"
+})
 class SpringaiApplicationTests {
 
+	@Autowired
+	private ChatController chatController;
+
+	@Autowired
+	private ChatModel chatModel;
+
+	private ChatClient chatClient;
+	private RelevancyEvaluator relevancyEvaluator;
+	private FactCheckingEvaluator factCheckingEvaluator;
+
+	// Minimum acceptable relevancy score
+	@Value("${test.relevancy.min-score:0.7}")
+	private float minRelevancyScore;
+
+	@Value("classpath:/promptTemplates/factcheck.st")
+	Resource factCheckTemplate;
+
+	@BeforeEach
+	void setup() throws IOException {
+		ChatClient.Builder chatClientBuilder = ChatClient.builder(chatModel).defaultAdvisors(new SimpleLoggerAdvisor());
+		this.chatClient = chatClientBuilder.build();
+		this.relevancyEvaluator = new RelevancyEvaluator(chatClientBuilder);
+		this.factCheckingEvaluator = FactCheckingEvaluator.builder(chatClientBuilder)
+				.evaluationPrompt(factCheckTemplate.getContentAsString(Charset.defaultCharset()))
+				.build();
+	}
+
 	@Test
-	void contextLoads() {
+	@DisplayName("Should return relevant response for basic geography question")
+	@Timeout(value = 30)
+	void evaluateControllerResponseRelevancy() {
+		// Given
+		String question = "What is the capital of India ?";
+
+		// When
+		String aiResponse = chatController.chat(question);
+		EvaluationRequest evaluationRequest = new EvaluationRequest(question, aiResponse);
+		EvaluationResponse response = relevancyEvaluator.evaluate(evaluationRequest);
+
+		Assertions.assertAll(() -> assertThat(aiResponse).isNotBlank(),
+				() -> assertThat(response.isPass())
+						.withFailMessage("""
+                                ========================================
+                                The answer was not considered relevant.
+                                Question: "%s"
+                                Response: "%s"
+                                ========================================
+                                """, question, aiResponse)
+						.isTrue(),
+				() -> assertThat(response.getScore())
+						.withFailMessage("""
+                                ========================================
+                                The score %.2f is lower than the minimum required %.2f.
+                                Question: "%s"
+                                Response: "%s"
+                                ========================================
+                                """, response.getScore(), minRelevancyScore, question, aiResponse)
+						.isGreaterThan(minRelevancyScore));
+	}
+
+	@Test
+	@DisplayName("Should return factually correct response for gravity-related question")
+	@Timeout(value = 300)
+	void evaluateFactAccuracyGravityQuestion() {
+		// Given
+		String question = "Who discovered the law of universal gravitation?";
+
+		// When
+		String aiResponse = chatController.chat(question);
+		EvaluationRequest evaluationRequest = new EvaluationRequest(question, aiResponse);
+		EvaluationResponse response = factCheckingEvaluator.evaluate(evaluationRequest);
+
+		Assertions.assertAll(
+				() -> assertThat(aiResponse).isNotBlank(),
+				() -> assertThat(response.isPass())
+						.withFailMessage("""
+                        ========================================
+                        The response was not considered factually accurate.
+                        Question: %s
+                        Response: %s
+                        Context: %s
+                        ========================================
+                        """, question, aiResponse, "") //context is empty, ""
+						.isTrue());
 	}
 
 }
