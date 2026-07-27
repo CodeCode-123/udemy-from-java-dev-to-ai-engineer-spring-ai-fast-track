@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6819578a-b89f-476a-9763-6907500b24ac" name="Changes" comment="Added MCP Sampling, created @McpTool of summarizeTickets in the MCPServerRemote to retrieve ticket data from the database, and used ctx.sampleEnable() to call the LLM model to provide a response to the client according to the retrieved data. Added a HelpDeskSamplingProvider in the MCPClient to handle the McpSchema CreateMessageRequest from the MCPServerRemote when MCP sampling was triggered. Added a controller method in MCPClient to handle the summarize-tickets request using MCP sampling, and tested using Postman" />
+    <list default="true" id="6819578a-b89f-476a-9763-6907500b24ac" name="Changes" comment="Added MCP Sampling, created @McpTool of summarizeTickets in the MCPServerRemote to retrieve ticket data from the database, and used ctx.sampleEnable() to call the LLM model to provide a response to the client according to the retrieved data. Added a HelpDeskSamplingProvider in the MCPClient to handle the McpSchema CreateMessageRequest from the MCPServerRemote when MCP sampling was triggered. Added a controller method in MCPClient to handle the summarize-tickets request using MCP sampling, and tested using Postman">
+      <change afterPath="$PROJECT_DIR$/mcpclient/src/main/java/com/eazybytes/mcpclient/util/HelpDeskElicitationProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcpserverremote/src/main/java/com/eazybytes/mcpserverremote/model/TicketContactInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../mcp-sampling/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../mcp-sampling/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,6 +18,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Record" />
       </list>
     </option>
   </component>
