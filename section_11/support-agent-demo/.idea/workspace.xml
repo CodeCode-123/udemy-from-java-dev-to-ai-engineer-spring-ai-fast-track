@@ -5,25 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4ec2eeac-fca2-4e0d-a6c6-23cf981abb8c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/mcp-server/db/init/01-schema.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mcp-server/db/init/02-seed.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mcp-server/src/main/java/com/eazybytes/mcp/server/domain/Customer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mcp-server/src/main/java/com/eazybytes/mcp/server/domain/CustomerOrder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mcp-server/src/main/java/com/eazybytes/mcp/server/domain/Enums.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mcp-server/src/main/java/com/eazybytes/mcp/server/domain/OrderItem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mcp-server/src/main/java/com/eazybytes/mcp/server/domain/Payment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mcp-server/src/main/java/com/eazybytes/mcp/server/domain/Product.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mcp-server/src/main/java/com/eazybytes/mcp/server/domain/Refund.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mcp-server/src/main/java/com/eazybytes/mcp/server/domain/SupportTicket.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mcp-server/src/main/java/com/eazybytes/mcp/server/dto/SupportDtos.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mcp-server/src/main/java/com/eazybytes/mcp/server/repository/CustomerRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mcp-server/src/main/java/com/eazybytes/mcp/server/repository/OrderRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mcp-server/src/main/java/com/eazybytes/mcp/server/repository/PaymentRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mcp-server/src/main/java/com/eazybytes/mcp/server/repository/ProductRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mcp-server/src/main/java/com/eazybytes/mcp/server/repository/RefundRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mcp-server/src/main/java/com/eazybytes/mcp/server/repository/SupportTicketRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mcp-server/src/main/java/com/eazybytes/mcp/server/tool/SupportActionTools.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mcp-server/src/main/java/com/eazybytes/mcp/server/tool/SupportQueryTools.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpringAI.postman_collection.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mcp-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mcp-server/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mcp-server/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/mcp-server/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,16 +52,54 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "Spring Boot.McpServerApplication.executor": "Debug",
+    "Spring Boot.SupportAgentApplication.executor": "Debug",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "project.structure.last.edited": "SDKs",
+    "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.17356321",
+    "project.structure.side.proportion": "0.31954023",
     "settings.editor.selected.configurable": "reference.projectsettings.compiler.javacompiler"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Spring Boot.McpServerApplication">
+    <configuration default="true" type="JetRunConfigurationType">
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <option name="filePath" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="" />
+      <option name="RUN_TOOL" value="" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="McpServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <envs>
+        <env name="DB_USERNAME" value="myuser" />
+        <env name="DB_PASSWORD" value="secret" />
+        <env name="DB_ROOT_PASSWORD" value="verysecret" />
+      </envs>
       <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UnknownPolicyInFreeMode" />
       <module name="mcp-server" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.eazybytes.mcp.server.McpServerApplication" />
@@ -89,9 +113,63 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SupportAgentApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <envs>
+        <env name="OPENAI_API_KEY" value="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" />
+      </envs>
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UnknownPolicyInFreeMode" />
+      <module name="support-agent" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.eazybytes.support.agent.SupportAgentApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.eazybytes.support.agent.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="Tox" factoryName="Tox">
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="RUN_TOOL" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Doctests">
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="" />
+      <option name="RUN_TOOL" value="" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Spring Boot.McpServerApplication" />
+      <item itemvalue="Spring Boot.SupportAgentApplication" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Spring Boot.McpServerApplication" />
+        <item itemvalue="Spring Boot.SupportAgentApplication" />
       </list>
     </recent_temporary>
   </component>
