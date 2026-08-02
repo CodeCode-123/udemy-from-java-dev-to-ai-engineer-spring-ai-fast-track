@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="4ec2eeac-fca2-4e0d-a6c6-23cf981abb8c" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/mcp-server/db/init/01-schema.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcp-server/db/init/02-seed.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcp-server/src/main/java/com/eazybytes/mcp/server/domain/Customer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcp-server/src/main/java/com/eazybytes/mcp/server/domain/CustomerOrder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcp-server/src/main/java/com/eazybytes/mcp/server/domain/Enums.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcp-server/src/main/java/com/eazybytes/mcp/server/domain/OrderItem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcp-server/src/main/java/com/eazybytes/mcp/server/domain/Payment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcp-server/src/main/java/com/eazybytes/mcp/server/domain/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcp-server/src/main/java/com/eazybytes/mcp/server/domain/Refund.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcp-server/src/main/java/com/eazybytes/mcp/server/domain/SupportTicket.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcp-server/src/main/java/com/eazybytes/mcp/server/dto/SupportDtos.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcp-server/src/main/java/com/eazybytes/mcp/server/repository/CustomerRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcp-server/src/main/java/com/eazybytes/mcp/server/repository/OrderRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcp-server/src/main/java/com/eazybytes/mcp/server/repository/PaymentRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcp-server/src/main/java/com/eazybytes/mcp/server/repository/ProductRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcp-server/src/main/java/com/eazybytes/mcp/server/repository/RefundRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcp-server/src/main/java/com/eazybytes/mcp/server/repository/SupportTicketRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcp-server/src/main/java/com/eazybytes/mcp/server/tool/SupportActionTools.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mcp-server/src/main/java/com/eazybytes/mcp/server/tool/SupportQueryTools.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;CodeCode-123&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/CodeCode-123/udemy-from-java-dev-to-ai-engineer-spring-ai-fast-track.git&quot;,
+    &quot;accountId&quot;: &quot;65994e4d-f202-4b56-8295-bccd534e6c7e&quot;
+  }
+}</component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHomeTypeForPersistence" value="WRAPPER" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
+  <component name="ProjectId" id="3HKvUEszpylDQoZfgXkoyD4wSHl" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "Spring Boot.McpServerApplication.executor": "Debug",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "project.structure.last.edited": "SDKs",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.17356321",
+    "settings.editor.selected.configurable": "reference.projectsettings.compiler.javacompiler"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration name="McpServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UnknownPolicyInFreeMode" />
+      <module name="mcp-server" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.eazybytes.mcp.server.McpServerApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.eazybytes.mcp.server.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.McpServerApplication" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-30f59d01ecdd-26cb7f24e5b0-intellij.indexing.shared.core-IU-253.29346.138" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4ec2eeac-fca2-4e0d-a6c6-23cf981abb8c" name="Changes" comment="" />
+      <created>1785629588574</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1785629588574</updated>
+    </task>
+    <servers />
+  </component>
+</project>
